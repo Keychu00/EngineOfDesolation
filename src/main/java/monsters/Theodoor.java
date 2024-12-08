@@ -2,7 +2,7 @@ package monsters;
 
 import javafx.scene.image.ImageView;
 import main.GameManager;
-
+// TODO: Refactor common actions, such as `addToScene`, into the base monster class.
 public class Theodoor extends Monster {
 
     private ImageView blood;   // Reference for blood

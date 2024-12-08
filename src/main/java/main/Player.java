@@ -3,6 +3,7 @@ package main;
 /**
  * this class handles the player logic
  */
+// TODO: Encapsulate the "lifeLabels" array to provide controlled access via getter methods.
 public class Player {
 
     GameManager gm;
@@ -30,6 +31,7 @@ public class Player {
 
         updatePlayerStatus();
     }
+    // TODO: Replace the while loop with an enhanced for-loop in `updatePlayerStatus()` to improve readability.
     public void updatePlayerStatus() {
 
         int i = 0;

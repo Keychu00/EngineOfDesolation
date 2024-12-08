@@ -2,7 +2,7 @@ package monsters;
 
 import javafx.scene.image.ImageView;
 import main.GameManager;
-
+// TODO: Introduce a base class for all monsters to encapsulate common behaviors and properties.
 public class EngineStealerMonster extends Monster {
 
     private ImageView blood;

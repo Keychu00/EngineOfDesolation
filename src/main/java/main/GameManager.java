@@ -2,6 +2,14 @@ package main;
 /**
  * This the main class that handles the game logic
  */
+// TODO: Check if the file exists before attempting to read/write to avoid errors.
+// TODO: Use a thread pool for managing background tasks like music and animations.
+// TODO: Handle exceptions to prevent crashes and improve user experience.
+// TODO: Break down large methods like `GameManager.start()` into smaller, more manageable functions for clarity and maintainability.
+// TODO: Add Javadoc for the `stopGameTimer` method, including the purpose and parameters.
+/**
+ * Stops the game timer and handles post-timer actions, such as saving elapsed time.
+ */
 
 import event.*;
 import javafx.animation.AnimationTimer;
@@ -61,8 +69,13 @@ public class GameManager extends Application {
     public URL currentMusic;
 
     public static void main(String[] args) {
-        // Launch the JavaFX application
-        launch(args);
+        try {
+            // TODO: Ensure all dependencies are available before launching the application.
+            launch(args);
+        } catch (Exception e) {
+            System.err.println("Error starting the game: " + e.getMessage());
+            // TODO: Log the error to a file for debugging.
+        }
     }
 
     @Override
@@ -92,6 +105,7 @@ public class GameManager extends Application {
         music.stop(url);
     }
 
+// TODO: Replace `AnimationTimer` with a dedicated thread or a ScheduledExecutorService for better performance and control.
 
     public void startGameTimer() {
         startTime = System.nanoTime();
@@ -104,7 +118,7 @@ public class GameManager extends Application {
         };
         gameTimer.start();
     }
-
+    // TODO: Add Javadoc for the `stopGameTimer` method, describing its functionality and side effects.
     public void stopGameTimer() {
         if (gameTimer != null) {
             gameTimer.stop();
@@ -115,6 +129,8 @@ public class GameManager extends Application {
             ui.messageText.setText("Your time: " + TimeManager.TimeUtils.formatTime(elapsedTime));
         }
     }
+
+
 
     public void updateTimerUI() {
         // Format the time as minutes and seconds

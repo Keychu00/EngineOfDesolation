@@ -136,7 +136,7 @@ public class UI {
 
         // Add the TextArea to the root Pane
         root.getChildren().add(messageText);
-
+// TODO: Bind the `timerLabel` and other UI components' positions to the window's width and height for better responsiveness.
         //Timer Label
         timerLabel = new Label("Time: 00:00");
         timerLabel.setStyle("-fx-font-family: 'Arial'; -fx-font-size: 24px; -fx-text-fill: white;");

@@ -11,8 +11,10 @@ import java.net.URL;
 public class SoundEffect {
 
     Clip clip;
+// TODO: Change the visibility of the `setFile()` method to `private` since it is used only within the class.
 
-    public void setFile(URL name){
+    void setFile(URL name){
+// TODO: Handle specific exceptions (e.g., FileNotFoundException) and provide meaningful error messages.
 
         try{
             AudioInputStream sound = AudioSystem.getAudioInputStream(name);

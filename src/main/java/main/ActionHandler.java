@@ -3,6 +3,9 @@ package main;
  * This class gives the buttons an action
  */
 
+// TODO: Add a README.md file with setup instructions and prerequisites for running the game.
+// TODO: Refactor nested if/else statements in ActionHandler.handleAction() to use a more readable structure like switch or helper functions).
+
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 
