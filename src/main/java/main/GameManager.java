@@ -2,11 +2,15 @@ package main;
 /**
  * This the main class that handles the game logic
  */
-// TODO: Check if the file exists before attempting to read/write to avoid errors.
+
+//My changes {
+//  TODO: Check if the file exists before attempting to read/write to avoid errors.
 // TODO: Use a thread pool for managing background tasks like music and animations.
 // TODO: Handle exceptions to prevent crashes and improve user experience.
 // TODO: Break down large methods like `GameManager.start()` into smaller, more manageable functions for clarity and maintainability.
 // TODO: Add Javadoc for the `stopGameTimer` method, including the purpose and parameters.
+
+//
 /**
  * Stops the game timer and handles post-timer actions, such as saving elapsed time.
  */
