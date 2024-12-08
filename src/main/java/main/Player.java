@@ -3,6 +3,7 @@ package main;
 /**
  * this class handles the player logic
  */
+//mahads comments
 // TODO: Encapsulate the "lifeLabels" array to provide controlled access via getter methods.
 public class Player {
 

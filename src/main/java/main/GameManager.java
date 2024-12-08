@@ -3,7 +3,7 @@ package main;
  * This the main class that handles the game logic
  */
 
-//My changes {
+//My changes { //mahads comments
 //  TODO: Check if the file exists before attempting to read/write to avoid errors.
 // TODO: Use a thread pool for managing background tasks like music and animations.
 // TODO: Handle exceptions to prevent crashes and improve user experience.

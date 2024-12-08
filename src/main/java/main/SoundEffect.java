@@ -11,6 +11,7 @@ import java.net.URL;
 public class SoundEffect {
 
     Clip clip;
+    //mahads comments
 // TODO: Change the visibility of the `setFile()` method to `private` since it is used only within the class.
 
     void setFile(URL name){
